@@ -5,13 +5,6 @@ using namespace std;
 string ltrim(const string &);
 string rtrim(const string &);
 
-/*
- * Complete the 'steadyGene' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts STRING gene as parameter.
- */
-
 // From https://www.hackerrank.com/challenges/bear-and-steady-gene/forum By aakashraj416
 int steadyGene(string gene)
 {
