@@ -11,3 +11,14 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
+
+class Result
+{
+
+    /*
+     * Complete the 'steadyGene' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING gene as parameter.
+     */
+}
