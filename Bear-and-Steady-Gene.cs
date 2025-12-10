@@ -22,3 +22,22 @@ class Result
      * The function accepts STRING gene as parameter.
      */
 }
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+        int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+        string gene = Console.ReadLine();
+
+        int result = Result.steadyGene(gene);
+
+        textWriter.WriteLine(result);
+
+        textWriter.Flush();
+        textWriter.Close();
+    }
+}
