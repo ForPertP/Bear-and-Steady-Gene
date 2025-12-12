@@ -9,3 +9,14 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'steadyGene' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts STRING gene as parameter.
+     */
+}
