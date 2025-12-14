@@ -19,6 +19,9 @@ class Result {
      * The function is expected to return an INTEGER.
      * The function accepts STRING gene as parameter.
      */
+
+     public static int steadyGene(String gene) {
+     }
 }
 
 
