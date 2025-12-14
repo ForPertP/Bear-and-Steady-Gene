@@ -24,6 +24,13 @@ class Result {
         int n = gene.length();
         int target = n / 4;
         int[] cnt = new int[4];
+
+        java.util.function.IntUnaryOperator idx = c -> {
+            if (c == 'A') return 0;
+            if (c == 'C') return 1;
+            if (c == 'G') return 2;
+            return 3;
+        };
          
      }
 }
