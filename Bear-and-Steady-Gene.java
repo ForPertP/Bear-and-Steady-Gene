@@ -21,6 +21,10 @@ class Result {
      */
 
      public static int steadyGene(String gene) {
+        int n = gene.length();
+        int target = n / 4;
+        int[] cnt = new int[4];
+         
      }
 }
 
