@@ -31,6 +31,10 @@ class Result {
             if (c == 'G') return 2;
             return 3;
         };
+
+        for (char c : gene.toCharArray()) {
+            cnt[idx.applyAsInt(c)]++;
+        }
          
      }
 }
