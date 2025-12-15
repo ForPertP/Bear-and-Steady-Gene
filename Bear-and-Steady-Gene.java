@@ -35,6 +35,11 @@ class Result {
         for (char c : gene.toCharArray()) {
             cnt[idx.applyAsInt(c)]++;
         }
+
+        int[] excess = new int[4];
+        for (int i = 0; i < 4; i++) {
+            excess[i] = Math.max(0, cnt[i] - target);
+        }
          
      }
 }
