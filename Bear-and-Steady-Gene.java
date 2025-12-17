@@ -40,6 +40,10 @@ class Result {
         for (int i = 0; i < 4; i++) {
             excess[i] = Math.max(0, cnt[i] - target);
         }
+
+        if (excess[0] == 0 && excess[1] == 0 && excess[2] == 0 && excess[3] == 0) {
+            return 0;
+        }
          
      }
 }
