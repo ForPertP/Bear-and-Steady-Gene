@@ -10,7 +10,6 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-
 class Result {
 
     /*
@@ -20,7 +19,7 @@ class Result {
      * The function accepts STRING gene as parameter.
      */
 
-     public static int steadyGene(String gene) {
+    public static int steadyGene(String gene) {
         int n = gene.length();
         int target = n / 4;
         int[] cnt = new int[4];
@@ -44,10 +43,30 @@ class Result {
         if (excess[0] == 0 && excess[1] == 0 && excess[2] == 0 && excess[3] == 0) {
             return 0;
         }
-         
-     }
-}
 
+        int ans = n;
+        int[] window = new int[4];
+        int left = 0;
+
+        for (int right = 0; right < n; right++) {
+            window[idx.applyAsInt(gene.charAt(right))]++;
+
+            while (window[0] >= excess[0] &&
+                window[1] >= excess[1] &&
+                window[2] >= excess[2] &&
+                window[3] >= excess[3]) {
+
+                ans = Math.min(ans, right - left + 1);
+
+                window[idx.applyAsInt(gene.charAt(left))]--;
+                left++;
+            }
+        }
+
+        return ans;
+    }
+
+}
 
 
 public class Solution {
