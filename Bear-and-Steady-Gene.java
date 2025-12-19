@@ -65,7 +65,6 @@ class Result {
 
         return ans;
     }
-
 }
 
 
